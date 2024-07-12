@@ -11,7 +11,7 @@ public class DevopsIntegrationApplication {
 
 	@GetMapping
 	public String message(){
-		return "Hi everyone, welcome to my channel! I'm devyani shende, a fashion designer  and I'm excited to share my passion with you. On this channel, I'll be sharing fashion related cutting and stitching videos, including some DIY & small crafts videos. ";
+		return "welcome to True learning by Akshat";
 	}
 
 	public static void main(String[] args) {
