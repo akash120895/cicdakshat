@@ -28,7 +28,7 @@ pipeline {
             when{ expression {env.GIT_BRANCH == 'origin/master'}}
             steps{
                 script{
-                     kubernetesDeploy (configs: 'deploymentservice.yaml' ,kubeconfigId: 'k8sconfigpwd')
+                     kubernetesDeploy (kubernetesDeploy configs: '', kubeConfig: [path: ''], kubeconfigId: 'k8configpwd', secretName: '', ssh: [sshCredentialsId: '*', sshServer: ''], textCredentials: [certificateAuthorityData: '', clientCertificateData: '', clientKeyData: '', serverUrl: 'https://'])
                    
                 }
             }
